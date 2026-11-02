@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  color: inherit;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s;
+}
+
+.card:hover,
+.card:focus-visible {
+  text-decoration: none;
+  transform: scale(1.015);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+:global(.section--alt) .card {
+  background: var(--surface);
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.Wohnen {
+  background: linear-gradient(160deg, #ffd8a8 0%, #ff9f43 100%);
+}
+
+.Pflege {
+  background: linear-gradient(160deg, #c3f0d5 0%, #34c759 100%);
+}
+
+.Gewerbe {
+  background: linear-gradient(160deg, #cfe3ff 0%, #5e9eff 100%);
+}
+
+.status {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #1d1d1f;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 980px;
+}
+
+.body {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  margin: 0.4rem 0 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.summary {
+  margin: 0;
+  color: var(--muted);
+}
